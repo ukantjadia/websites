@@ -1,0 +1,56 @@
+baseURL = "https://ukantjadia.me/"
+languageCode = "en-us"
+
+title = "Ukant Jadia"
+theme = "oaktrough"
+
+# dateFormat = "date -u +'%Y-%m-%d %R:%S%:z'"
+
+# Allow Hugo to munge, e.g., "Programming Stuff" into "programming-stuff"
+preserveTaxonomyNames = false
+
+# Allow Hugo to rewrite URLs so they work on IPFS as well as locally and via URL
+relativeURLs = true
+
+# Highlighting
+pygmentsStyle = "fruity"
+pygmentsUseClassic = false
+pygmentsCodefences = true
+
+[taxonomies]
+  category = "categories"
+
+[permalinks]
+    post = "/post/:slug"
+    tutorial = "/tutorial/:slug"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/post/"
+    weight = 1
+
+[[menu.main]]
+    name = "Tutorials"
+    url = "/tutorial/"
+    weight = 2
+
+[[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+
+[[menu.feed]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 1
+
+
+[params]
+    description = "Ukant Jadia's personal website"
+    author = "Ukant Jadia"
+    googlesiteverification = "8vujCBA5Nh_IpsNf_xiY5mVqPkYlo_KyU-IUbW5ekX0"
+    MetaDescription = "Ukant Jadia's personal website, regarding programming, hacking, and politics."
+    footer = "All text [CC-BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) & code [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) | [Bitter ht](https://www.huertatipografica.com/en/fonts/bitter-ht), [OFL](https://en.wikipedia.org/wiki/SIL_Open_Font_License) | [No AMP](https://www.polemicdigital.com/google-amp-go-to-hell/) | [Colors](https://coolors.co/ffedef-943246-2c4251-fef9ef-352d39)"
+
+[markup.goldmark.renderer]
+unsafe= true

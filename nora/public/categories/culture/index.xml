@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Culture on Ukant Jadia</title>
+    <link>https://ukantjadia.me/categories/culture/</link>
+    <description>Recent content in Culture on Ukant Jadia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Aug 2016 16:28:47 +0000</lastBuildDate><atom:link href="https://ukantjadia.me/categories/culture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Linux on the PC Needs a Focus on Hardware Support</title>
+      <link>https://ukantjadia.me/post/why-linux-on-the-pc-needs-a-focus-on-hardware-support/</link>
+      <pubDate>Tue, 02 Aug 2016 16:28:47 +0000</pubDate>
+      
+      <guid>https://ukantjadia.me/post/why-linux-on-the-pc-needs-a-focus-on-hardware-support/</guid>
+      <description>Linux cannot fall behind in hardware support. In fact, if we ever want to capture the desktop market, we have to race ahead.
+A few days ago, I had an interesting and somewhat frustrating experience with a friend of mine. Their laptop was dying, so they asked me to give them some suggestions for a new one.
+Their requirements were a computer with a display that was good for reading, enough power to be responsive and able to multitask well, and rapidly accessible storage, but not necessarily a lot of it.</description>
+    </item>
+    
+  </channel>
+</rss>

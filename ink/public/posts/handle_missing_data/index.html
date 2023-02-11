@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Handling Missing Data - Ukant Jadia</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Handling Missing Data">
+<meta itemprop="description" content="Find the missing data In order to find the missing data in large dataset we use the functions of pandas library, functions is isnull()
+DataFrame_name.isnull() it will give the outout as boolean for every element of dataset. To get the status of a single comlumn apply the with .any(axis=1) parameter like df[df.isnull().any(axis-1)] NOTE: DataFrame_name.isnull() function do not consider an empty string or string with space as missing value. So we have to check and replace the empty string from our dataset if any exist.">
+
+<meta itemprop="wordCount" content="195">
+<meta itemprop="keywords" content="DataScience," /><meta property="og:title" content="Handling Missing Data" />
+<meta property="og:description" content="Find the missing data In order to find the missing data in large dataset we use the functions of pandas library, functions is isnull()
+DataFrame_name.isnull() it will give the outout as boolean for every element of dataset. To get the status of a single comlumn apply the with .any(axis=1) parameter like df[df.isnull().any(axis-1)] NOTE: DataFrame_name.isnull() function do not consider an empty string or string with space as missing value. So we have to check and replace the empty string from our dataset if any exist." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ukantjadia.me/blog/posts/handle_missing_data/" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Handling Missing Data"/>
+<meta name="twitter:description" content="Find the missing data In order to find the missing data in large dataset we use the functions of pandas library, functions is isnull()
+DataFrame_name.isnull() it will give the outout as boolean for every element of dataset. To get the status of a single comlumn apply the with .any(axis=1) parameter like df[df.isnull().any(axis-1)] NOTE: DataFrame_name.isnull() function do not consider an empty string or string with space as missing value. So we have to check and replace the empty string from our dataset if any exist."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://ukantjadia.me/blog/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://ukantjadia.me/blog/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://ukantjadia.me/blog/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ukant Jadia" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://ukantjadia.me/blog/">Ukant Jadia</a></h1>
+	<div class="site-description"><p>Read my write here!!</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/ukantjadia" title="Github"><i data-feather="github"></i></a></li><li><a href="https://twitter.com/UkantJadia" title="Twitter"><i data-feather="twitter"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/blog/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/blog/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/blog/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/blog/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+				<div class="matter">
+					<h1 class="title">Handling Missing Data</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="find-the-missing-data">Find the missing data</h1>
+<p>In order to find the missing data in large dataset we use the functions of pandas library, functions is isnull()</p>
+<ul>
+<li>DataFrame_name.isnull()</li>
+<li>it will give the outout as boolean for every element of dataset.</li>
+<li>To get the status of a single comlumn apply the with <code>.any(axis=1)</code> parameter like <code>df[df.isnull().any(axis-1)]</code></li>
+</ul>
+<blockquote>
+<p>NOTE: DataFrame_name.isnull() function do not consider an empty string or string with space as missing value. So we have to check and replace the empty string from our dataset if any exist.</p>
+</blockquote>
+<h1 id="process-to-handle-missing-data">Process to Handle Missing Data</h1>
+<p>There are mainly two process to handle the missing data in our observation</p>
+<ol>
+<li>drop the missing data by row/column</li>
+<li>Imput the missing values using mean/median/mode</li>
+</ol>
+<ul>
+<li>To drop the data row with missing/nan values :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>df.dropna()
+</span></span></code></pre></div><ul>
+<li>We can imput the data in servel ways using the <code>df.fillna()</code> on the dataset.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#a31515">&#39;col_name&#39;</span>].fillna(1,inplave=<span style="color:#00f">True</span>) <span style="color:#008000"># It will replace nan with 1 in the col_name column</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#a31515">&#39;date&#39;</span>].fillna(method=<span style="color:#a31515">&#39;ffill&#39;</span>, inplace=<span style="color:#00f">True</span>) <span style="color:#008000"># It will fill the previous value on the next nan observation </span>
+</span></span></code></pre></div><ul>
+<li>We can also use the mean,mode and median to fill the missing value</li>
+</ul>
+<h1 id="what-if-we-ignore-the-missing-valuedata">What if we ignore the Missing Value/data</h1>
+<ul>
+<li>Missing Data can lead to bias and inaccurate result and conclusions.</li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/datascience">DataScience</a></li>
+							
+						</ul>
+					
+				
+			</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'Comment';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the </a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2023 |  <a href="https://github.com/ukantjadia">Ukant jadia</a> | <a href="mailto: ukantjadia0120@gmail.com">Mail</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

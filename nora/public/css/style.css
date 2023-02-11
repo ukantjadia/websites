@@ -1,0 +1,306 @@
+/* Variable declarations which are available to all styles. */
+:root {
+  --black-coffee: #352d39;
+  --floral-white: #fef9ef;
+  --charcoal: #2c4251;
+  --charcoal-light: #2c425130;
+  --red-violet: #943246;
+  --lavender-blush: #ffedef;
+  /* The background of the page backdrop. */
+  --bg-color: var(--floral-white); 
+  /* The color of text on the backdrop. */
+  --fg-color: var(--black-coffee);
+
+  /* The color used for borders and highlights. */
+  --offset-border-color: var(--charcoal);
+  /* The background used to encapsulate off-set text areas of the page. */
+  --offset-bg-color: var(--lavender-blush);
+
+  /* The color used for cards and callouts. */
+  --callout-bg-color: var(--lavender-blush);
+  --callout-fg-color: var(--fg-color);
+  --callout-dropshadow-color: var(--charcoal-light);
+  
+  /* The color used to set links apart from non-interactable text. */
+  --link-color: var(--red-violet);
+}
+
+/* Applied to the whole visible content of the page. */
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  /* provides nice soft padding for text on narrow screens. */
+  padding: 2.5%;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+}
+
+/* Applied to the textual content of the page. */
+main {
+  hyphens: auto;
+  /* "Let it breathe." Text does not need to be jammed as close together as possible. */
+  line-height: 1.4;
+  /* Slightly higher font size means it's easier to read. */
+  /* Setting a pt value here means other adjustments are made in scale. */
+  font-size: 12pt;
+}
+
+main header {
+  text-align: center;
+}
+
+main h1 {
+    margin-top: 4px;
+    font-size: 22pt;
+}
+
+main h2 {
+    font-size: 18pt;
+}
+
+main h3 {
+    font-size: 14pt;
+}
+
+/* The main content for the index page, standing out on purpose.  */
+.hero {
+    font-size: 14pt;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/* Let the hero portrait image be above the hero intro text on small devices. */
+@media only screen and (max-width: 600px) {
+    .hero {
+        font-size: 14pt;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+/* Reduces margin just enough to accomodate the shadow (see below) */
+/* (shadows gets cut off otherwise, since it breaches the borders of <body>) */
+.hero .portrait {
+    margin-left: 2px;
+}
+
+/* Adds a soft border-like shadow under the image to make it stand out but not too much */
+.hero img {
+    filter: drop-shadow(0 0 2px var(--callout-dropshadow-color));
+}
+
+/* Text block in the hero for displaying larger introductory text. */
+.intro {
+    min-width: 200px;
+}
+
+/* Make section into cards. */
+section {
+    margin: 16px;
+    padding: 1px 8px 4px;
+    border-radius: 8px;
+    color: var(--callout-fg-color);
+    background-color: var(--callout-bg-color);
+    box-shadow: 2px 4px var(--callout-dropshadow-color);
+}
+
+/* Remove the disclosure triangle, per
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
+ */
+summary {
+    display: block;
+}
+
+/* Makes the content cascade downwards nicely */
+details {
+    padding: 0 1em;
+}
+
+details > :not(summary) {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* Show a textual prompt for opening details (shown after the summary) */
+summary:after {
+    color: var(--link-color);
+    font-weight: bold;
+    content: "Show more...";
+}
+
+/* Show a textual prompt for closing details (shown after the summary) */
+details[open] summary:after {
+    content: "Show less...";
+}
+
+/* Basic shape and alignment of the navigational header and informational footer. */
+header, footer {
+  text-align: center;
+}
+
+/* Place the title on the left and the navigation on the right.  */
+header {
+    display: flex;
+    /* spreads the elements of a flex-displayed container as far apart as possible */
+    justify-content: space-between;
+    /* aligns the elements of a flex-displayed container vertically, along the center line */
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/* Let the header text be above the navigation links in the header on small devices. */
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+}
+header h1 {
+    font-size: 22pt;
+    margin: 0;
+}
+
+nav.div {    
+    display: block;
+    float: right;
+    font-size: 14pt;
+}
+
+nav a + a {
+    margin-left: 0.33em;
+}
+
+/* Link styling. All links get the same color. When hovering, they get an underline. */
+a,
+a:visited,
+a:hover { color: var(--link-color) }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* List styling */
+
+li + li { margin-top: 0.5ex; }
+
+/* Turn off bullets and spacing on list pages */
+.list ul {
+    padding-left: 0px;
+}
+.list li { 
+    list-style-type: none;
+}
+
+/* Applied to the Hugo-generated Table of Contents.
+ * To get a TOC, the following is added to the YAML.
+
+output:
+  blogdown::html_page:
+    toc: true
+
+*/
+
+/* Code Boxes */
+pre {
+  border: 1px solid var(--offset-border-color);
+  margin: 12px;
+  padding: 1px;
+  overflow-x: auto;
+  border-radius: 3px;
+}
+code { 
+  padding: 0px; 
+  border-radius: 2px; 
+}
+pre code { background: none; }
+
+/* Images, tables, etc are centrally aligned. */
+img:not(.inline), iframe, video { 
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* For images with caption, placed in-line with text */
+figure {
+    margin: 20px;
+    max-width: 300px;
+    font-size: 0.75em; 
+}
+
+figure.right {
+    float: right;
+}
+
+figure.left {
+    float: left;
+}
+
+figure img {
+    max-width: 200px;
+    border-radius: 3px;
+}
+
+figure.portrait img {
+    max-width: 200px;
+    border-radius: 12px;
+}
+
+/* Block quotes (used in summaries, etc) have some emphasis added. */
+blockquote {
+  /* A bar to the left of each quote. */
+  border-left: 5px solid var(--offset-border-color);
+  /* An offset background. */
+  background: var(--offset-bg-color);
+  /* Basic outstanding layout. */ 
+  padding: 3px 1em 3px;
+  margin: 12px;
+  border-radius: 3px;
+}
+
+/* pagination */
+.pagination li {
+  display: inline;
+  list-style: none;
+}
+ul.pagination {
+  padding: none;
+}
+
+/* Pretty styling for tables. */
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #444444; }
+th, td { padding: 5px; }
+tr:nth-child(even) { background: #444444 }
+
+/* Turn off unused elements in print layouts */
+@media print {
+    header, footer { display: none !important; }
+    code { font-size: 45%; }
+    a.footnote-return { display: none !important; }
+}
+
+/* From https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ */
+a.skip-main {
+    position: absolute;
+    left: -9999px;
+    background-color: #000;
+    color: #fff;
+    padding: 0.25em 1em;
+    border-radius: 16px;
+    border: 4px solid yellow;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+a.skip-main:focus,
+a.skip-main:active { left: auto; }
+

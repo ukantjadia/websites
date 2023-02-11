@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Learn Seaborn - Ukant Jadia</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Learn Seaborn">
+<meta itemprop="description" content="Seaborn Tutorial IMPORTANT Que: What is Probability Density of Data? Ans: The Probability Density of Data refers to the likelihood of a certain value or range of values occurring within a dataset. It is mathematical function that describes the distribution of the data and can be used to make prediction and to understand the underlying patterns and relationship within the dataset.
+Note Python notebook containing all plots with various parameter can be obtain from [here]"><meta itemprop="datePublished" content="2023-01-17T23:08:58+05:30" />
+<meta itemprop="dateModified" content="2023-01-17T23:08:58+05:30" />
+<meta itemprop="wordCount" content="759">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Learn Seaborn" />
+<meta property="og:description" content="Seaborn Tutorial IMPORTANT Que: What is Probability Density of Data? Ans: The Probability Density of Data refers to the likelihood of a certain value or range of values occurring within a dataset. It is mathematical function that describes the distribution of the data and can be used to make prediction and to understand the underlying patterns and relationship within the dataset.
+Note Python notebook containing all plots with various parameter can be obtain from [here]" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ukantjadia.me/blog/seaborn/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2023-01-17T23:08:58+05:30" />
+<meta property="article:modified_time" content="2023-01-17T23:08:58+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Learn Seaborn"/>
+<meta name="twitter:description" content="Seaborn Tutorial IMPORTANT Que: What is Probability Density of Data? Ans: The Probability Density of Data refers to the likelihood of a certain value or range of values occurring within a dataset. It is mathematical function that describes the distribution of the data and can be used to make prediction and to understand the underlying patterns and relationship within the dataset.
+Note Python notebook containing all plots with various parameter can be obtain from [here]"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://ukantjadia.me/blog/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://ukantjadia.me/blog/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://ukantjadia.me/blog/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ukant Jadia" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://ukantjadia.me/blog/">Ukant Jadia</a></h1>
+	<div class="site-description"><p>Ukant Jadia</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/knadh/hugo-ink" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/blog/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/blog/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/blog/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/blog/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">17</span>
+							<span class="rest">Jan 2023</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Learn Seaborn</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="seaborn-tutorial">Seaborn Tutorial</h1>
+<blockquote>
+<p><strong>IMPORTANT</strong>
+Que: What is Probability Density of Data?
+Ans: The Probability Density of Data refers to the likelihood of a certain value or range of values occurring within a dataset.
+It is mathematical function that describes the distribution of the data and can be used to make prediction
+and to understand the underlying patterns and relationship within the dataset.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note</strong>
+Python notebook containing all plots with various parameter can be obtain from [here]</p>
+</blockquote>
+<hr>
+<h2 id="setup">Setup</h2>
+<p>Install the <a href="https://matplotlib.org/">matplotlib</a> and <a href="https://seaborn.pydata.org/">seaborn</a> in your editor or notebook by using following commands</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install seaborn      <span style="color:#008000"># to install in termianl </span>
+</span></span><span style="display:flex;"><span>pip install matplotlib      
+</span></span><span style="display:flex;"><span><span style="">!</span>pip install seaborn     <span style="color:#008000"># to install in notebook</span>
+</span></span><span style="display:flex;"><span><span style="">!</span>pip install matplotlib
+</span></span><span style="display:flex;"><span>conda install seaborn    <span style="color:#008000"># to install in conda env </span>
+</span></span><span style="display:flex;"><span>conda install matplotlib
+</span></span></code></pre></div><h1 id="plots">Plots</h1>
+<h2 id="distribution-plots">Distribution Plots</h2>
+<h3 id="joint-plot">Joint Plot</h3>
+<p>Joint Plot is a combination of scatter plot and a histogram or kernel density estimate (KDE) plot to display the distribution of one variable along the x-axis and the distribution of another variable on y-axis.
+It allows to visualize the relationship between two variables.</p>
+<h3 id="kde-plot">KDE Plot</h3>
+<p>Kernel Density Estimation is a graphical representation of the probability density function of a continuous random variable.
+It uses a smoothed line to show how often different values appear in the dataset.
+It is a non-parametric method(it does not make any assumptions about the underlying distribution of data.)</p>
+<h3 id="pair-plot">Pair Plot</h3>
+<p>Also known as Scatter plot matrix.
+A pair plot is used to visualize the relationship between multiple variables in a dataset.
+It uses a grid of subplots, where each subplot shows a scatter plot of two variables.
+Pair plot is often used to explore the relationship in a dataset.</p>
+<h3 id="rug-plot">Rug Plot</h3>
+<p>Rug plot shows the distribution of a single numeric variable.
+A set of vertical lines is plotted for each observation in the dataset, with x-axis representing the variable of interest and the y-axis representing a value of 0 or 1.
+The resulting plot allows you to see the density of observations at different values of the variable.
+It&rsquo;s called rug-plot because it looks like a carpet or a rug.</p>
+<h3 id="styling">Styling</h3>
+<p>Style and customization can be done using various function and options like you can change the color palette of a plot, adjust the size and font of the axis labels, or add a title to the plot, scale and provide context to the plot, various plotting function and Faceting(split data across multiple subplots).</p>
+<h2 id="categorial-plots">Categorial Plots</h2>
+<h3 id="bar-plot">Bar Plot</h3>
+<p>In Bar Plot bars can represent different categories or groups, and the height of the bar plot can represent a numerical value or count.
+In Seaborn the <code>barplot()</code> function can plot a bar char of the y-axis variable against the x-axis variable.</p>
+<h3 id="count-plot">Count Plot</h3>
+<p>Count Plot shows the number of occurrences of each category in a dataset.
+It used to visualize the distribution of categorical data.
+The x-axis represents the categories and the y-axis represents the count of data points in each category.</p>
+<h3 id="box-plot">Box Plot</h3>
+<h3 id="violin-plot">Violin Plot</h3>
+<p>Violin Plot is similar to the box plot, but instead of a box it plots the data as kernel density estimate(KDE).
+The violin plot shows the probability density of the data at different values.
+It has a marker to indicate the median of the data and the width of violin indicates the frequency of the data points.</p>
+<h3 id="strip-plot">Strip Plot</h3>
+<p>It displays the individual data points as dots or points on a single line.
+It is used to show the distribution of a single variable and often used in combination with other types of plots to provide additional information.</p>
+<h3 id="swarm-plot">Swarm Plot</h3>
+<h3 id="palettes">Palettes</h3>
+<p>A palette refers to a set of colors that can be used to create visualizations.
+<code>sns.color_palette()</code> function can be used to create custom palettes.
+Different palettes can be used to create different types of plots, such as categorical plots, sequential plots, and diverging plots</p>
+<h2 id="matrix-plot">Matrix Plot</h2>
+<h3 id="heat-maps">Heat Maps</h3>
+<p>Heat maps use color to show the density of distribution of the data, where the values are represented by colors.
+It is a 2-dimensional representation of data.
+The data can be passed as a matrix or a data-frame, with each row and column representing a variable in the data, and the values of the cells representing the measurements or observations.</p>
+<h3 id="cluster-map">Cluster Map</h3>
+<p>Cluster Map group similar data points together and separated dissimilar data points.
+In Cluster Map, the rows and columns of the data are rearranged to group of similar data points together and to make patterns in the data more visible.</p>
+<h3 id="pair-grid">Pair Grid</h3>
+<p>Pair Grid allows to plot multiple plots together in a grid format.</p>
+<h3 id="facet-grid">Facet Grid</h3>
+<h3 id="regression-plot">Regression Plot</h3>
+
+			</div>
+
+			<div class="tags">
+				
+			</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'ink-demo';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the </a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2023  © Copyright notice |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

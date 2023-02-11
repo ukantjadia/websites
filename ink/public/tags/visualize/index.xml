@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualize on Ukant Jadia</title>
+    <link>https://ukantjadia.me/blog/tags/visualize/</link>
+    <description>Recent content in Visualize on Ukant Jadia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Tue, 17 Jan 2023 23:08:58 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/tags/visualize/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learn Seaborn</title>
+      <link>https://ukantjadia.me/blog/posts/seaborn/</link>
+      <pubDate>Tue, 17 Jan 2023 23:08:58 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/seaborn/</guid>
+      <description>Seaborn Tutorial IMPORTANT Que: What is Probability Density of Data? Ans: The Probability Density of Data refers to the likelihood of a certain value or range of values occurring within a dataset. It is mathematical function that describes the distribution of the data and can be used to make prediction and to understand the underlying patterns and relationship within the dataset.
+Note Python notebook containing all plots with various parameter can be obtain from [here]</description>
+    </item>
+    
+  </channel>
+</rss>

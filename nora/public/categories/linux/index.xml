@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Ukant Jadia</title>
+    <link>https://ukantjadia.me/categories/linux/</link>
+    <description>Recent content in Linux on Ukant Jadia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Mar 2018 11:48:21 -0500</lastBuildDate><atom:link href="https://ukantjadia.me/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>U2F Zero in Firefox</title>
+      <link>https://ukantjadia.me/post/u2f-zero-in-firefox/</link>
+      <pubDate>Mon, 26 Mar 2018 11:48:21 -0500</pubDate>
+      
+      <guid>https://ukantjadia.me/post/u2f-zero-in-firefox/</guid>
+      <description>I recently got a U2F Zero, a tiny (about 2 inches long) and cheap (about 8 dollars) device implementing the FIDO Universal Second Factor protocol. It&amp;rsquo;s open source, too, which is awesome.
+I primarily use Firefox. Unfortunately, Firefox doesn&amp;rsquo;t support U2F out of the box; you have to enable security.webauth.u2f in about:config.
+Once enabled, I tried to register it with GitHub. Unfortunately, it kept on failing, despite the little green light on the U2F Zero going blue.</description>
+    </item>
+    
+    <item>
+      <title>Why Linux on the PC Needs a Focus on Hardware Support</title>
+      <link>https://ukantjadia.me/post/why-linux-on-the-pc-needs-a-focus-on-hardware-support/</link>
+      <pubDate>Tue, 02 Aug 2016 16:28:47 +0000</pubDate>
+      
+      <guid>https://ukantjadia.me/post/why-linux-on-the-pc-needs-a-focus-on-hardware-support/</guid>
+      <description>Linux cannot fall behind in hardware support. In fact, if we ever want to capture the desktop market, we have to race ahead.
+A few days ago, I had an interesting and somewhat frustrating experience with a friend of mine. Their laptop was dying, so they asked me to give them some suggestions for a new one.
+Their requirements were a computer with a display that was good for reading, enough power to be responsive and able to multitask well, and rapidly accessible storage, but not necessarily a lot of it.</description>
+    </item>
+    
+  </channel>
+</rss>
