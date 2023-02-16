@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 21 Jan 2023 17:43:42 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello</title>
-      <link>https://ukantjadia.me/blog/posts/hello/</link>
-      <pubDate>Sat, 21 Jan 2023 17:43:42 +0530</pubDate>
-      
-      <guid>https://ukantjadia.me/blog/posts/hello/</guid>
-      <description>hello this is a test </description>
-    </item>
-    
+    <lastBuildDate>Tue, 17 Jan 2023 23:08:58 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn Seaborn</title>
       <link>https://ukantjadia.me/blog/posts/seaborn/</link>
@@ -25,6 +16,134 @@
       <guid>https://ukantjadia.me/blog/posts/seaborn/</guid>
       <description>Seaborn Tutorial IMPORTANT Que: What is Probability Density of Data? Ans: The Probability Density of Data refers to the likelihood of a certain value or range of values occurring within a dataset. It is mathematical function that describes the distribution of the data and can be used to make prediction and to understand the underlying patterns and relationship within the dataset.
 Note Python notebook containing all plots with various parameter can be obtain from [here]</description>
+    </item>
+    
+    <item>
+      <title>What I Know in Java</title>
+      <link>https://ukantjadia.me/blog/posts/what-i-know-in-java/</link>
+      <pubDate>Sat, 26 Nov 2022 23:01:25 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/what-i-know-in-java/</guid>
+      <description>Explaining the pubic static void main(String[] args) the execution of our code starts form main.
+let in order to create the object of class x we should have the main method
+So main is a parameter and it takes parameter ie. main ( )
+And the type of the parameter can be anything so we take the string because String except values and we don&amp;rsquo;t know how many values we are taking so we take array main(String args[])</description>
+    </item>
+    
+    <item>
+      <title>Md to Html</title>
+      <link>https://ukantjadia.me/blog/posts/md-to-html/</link>
+      <pubDate>Sun, 26 Jun 2022 22:47:32 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/md-to-html/</guid>
+      <description>Conversion of Markdown(.md) to html markup language get the pandoc Use the following command pandoc smaple_readme.md -t html -o sample_readme.html In shell it would be written like cat=$(pandoc $1.md -t html -o $1.html ) It will be run the loop with wildcard like for i in ~/locat/.md/file/* ; do $(var) ; done Modification check extension of each file with if condition and print the non md file like if [ $1 -ne *.</description>
+    </item>
+    
+    <item>
+      <title>Git Command</title>
+      <link>https://ukantjadia.me/blog/posts/git-command/</link>
+      <pubDate>Thu, 16 Jun 2022 22:44:17 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/git-command/</guid>
+      <description>what you should do in git git init -b main git remote add origin &amp;lt;repo_link&amp;gt; git remote -v cd to the root file of the project echo &amp;ldquo;+ Project &amp;quot; &amp;raquo; README.md git init git add . git commit -m &amp;ldquo;README&amp;rdquo; git branch -M Main git remote add origin &amp;lt;repo_link&amp;gt; git push -u origin Main
+pushing an existing repo from cli git remote add origin https://github.com/UserCtf777/Inkdrop.git git branch -M Main git push -u origin Main after clonning any repo it have the address of origin, simply you cannot add your repo url for backup/project/ICR for that you have to change the origin url follow the following command</description>
+    </item>
+    
+    <item>
+      <title>Information Gathering</title>
+      <link>https://ukantjadia.me/blog/posts/information-gathering/</link>
+      <pubDate>Tue, 14 Jun 2022 22:49:51 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/information-gathering/</guid>
+      <description>Recon There are two type of Reconnaissance
+Passive Reconnaissance :&amp;ndash; Doing the recon without coming in direct contact of the target. \
+Active Reconnaissance :&amp;ndash; Doing the active notecible action on the target site.
+Passive Reconnaissance includes local/Geo Information Satellite Images Building layout Cabin location, fence, count of head in building, ways to exit, break areas, security fencing. Job information Senior manager name, meeting routine, job title. Image from social sites like badge photo, cubical, desktop.</description>
+    </item>
+    
+    <item>
+      <title>Command Netstat</title>
+      <link>https://ukantjadia.me/blog/posts/command-netstat/</link>
+      <pubDate>Wed, 25 May 2022 22:33:19 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/command-netstat/</guid>
+      <description>Learn Netstat A basic Linux network command
+NETSTAT Prints the network connection and routing tables. Like an CCTV monitor for every connection come in and go out from your machine. MiniManual netstat -ant : a for all connection, n for numeric, t for all TCP connection//u for the UDP connection netstat -rnec :r for the route information, n numeric, e extend, c continous prints the result netstat -stuw : s for statistics summary,t/u for tcp/udp, w prints raw data netstat -tulpn : it shows the connectio with PID numbers lsof -i : it establish the connection </description>
+    </item>
+    
+    <item>
+      <title>Learn Tmux</title>
+      <link>https://ukantjadia.me/blog/posts/learn-tmux/</link>
+      <pubDate>Mon, 23 May 2022 22:53:27 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/learn-tmux/</guid>
+      <description>#tmux #linux
+#tool bullet point install what it is what it can do tmux key binding tmux conf extra features patching for history backups Linux : sudo apt-get install tmux Fedora : sudo dnf -y install tmux Cent-OS : sudo yum -y install tmux Arch Linux : sudo pacman -S tmux to start : tmux NOTE: Prefix key : Ctrl+b github What is tmux ?? It is terminal multiplexer. It acts as a window manager in your terminal.</description>
+    </item>
+    
+    <item>
+      <title>Enumeration</title>
+      <link>https://ukantjadia.me/blog/posts/enumeration/</link>
+      <pubDate>Sun, 22 May 2022 22:41:47 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/enumeration/</guid>
+      <description>Enumeration Kioptrix level 1 Now as beginner we should a have vulnerable machine to test Use kioptrix level a from vulnhub. This is used for beginner to develop there skill by testing the vulnerable machine. Download it, and set up it on your virtual software. Make sure the network connection is set to NAT Open the root folder(which contain all configuration files) and open configuration file and change Bridge to NAT I Coppied select this option form pop dialogue Once the setup is done do the arp-scan -l On your system it will discover the available host in your ip CHIR Ignore the x.</description>
+    </item>
+    
+    <item>
+      <title>Learn Network Concept</title>
+      <link>https://ukantjadia.me/blog/posts/learn-network-concept/</link>
+      <pubDate>Fri, 20 May 2022 22:28:29 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/learn-network-concept/</guid>
+      <description>Networking Concept Mac address Media control access It is physical address to identify the devices it identify the NIC of each divices (NIC&amp;ndash;&amp;gt; Network identification card) ex:- ether 00:0c:49:0a:43:03 Mac work in the second and third layer of the OSI model Specially it is related to the switches TCP &amp;ndash;VS&amp;ndash; UDP TCP Transmission COntrol Protocol Connection oriented protocol used in HTTPS/SSH/TelNet/SMTP/FTP provide the more security and relailablity it form one-to-one connection and it gurantee the complete delivery of data Three way hand shake SYN -&amp;gt; SYN-ACK -&amp;gt; ACK it is slow due to three-way-handshake, it take time to complete and establis the connection Use port to establish the connection During hand-shake it acknowldge your machine to the requested server contains the 20Byte packet UDP User Datagram Protocol Connection less Protocol it provide the fast transmission Broadcast or multicast the message and the complete delivery of data is note guarnted Streamming on voice-over-io(VOIP), DHCP,DNS Used for streaming the data like procast, video contains the 8Byte packet Comman Ports and Protocol TCP PROTOCOL/SERVICE PORT&#39;S FTP 21 SSH 22 TelNet 23 SMTP 25 DNS 53 HTTP/HTTPS 80/443 POP3 110 SMB 139+445 IMAP 143 UDP PROTOCOL/SERVICE PORT&#39;S DNS 53 DHCP 67.</description>
+    </item>
+    
+    <item>
+      <title>Dwmbar vs Dwmblocks</title>
+      <link>https://ukantjadia.me/blog/posts/dwmbar-vs-dwmblocks/</link>
+      <pubDate>Tue, 17 May 2022 22:23:44 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/dwmbar-vs-dwmblocks/</guid>
+      <description>2022-05-17 problem statement with dwmbar the cpu uses is touching its picks and that thing i don&amp;rsquo;t like
+solution to solve this i am trying to get the dwmblocks of Bugswriter
+error or problem faced get repo
+run make and you may get this error 🔽
+Pasted image 20220518015013.png
+solving this we get this
+use this
+okh now the error is fixed
+So first know what is error about
+error we are trying to automatically compile the dwmblocks.</description>
+    </item>
+    
+    <item>
+      <title>Display Error</title>
+      <link>https://ukantjadia.me/blog/posts/display-error/</link>
+      <pubDate>Wed, 23 Mar 2022 22:39:08 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/display-error/</guid>
+      <description>Display-problem solve_the_display xserver_error GTK gdm3 tty cd etc/apt/source deb http:/http.kali.org
+cd etc/environment cat /etc/os-release cat /etc/apt/source.list #edit_source manually update the some packages sudo vim /var/lib/dpkg/status 1 . find the required package 2. delet all pacakge data ( do not delete the argument of some commands ) 3. save that file and again update the system
+$` sudo apt update` Now i install the gdm3 because there is enviroment variable( $DISPLAY) was broken during pulling big git repository </description>
+    </item>
+    
+    <item>
+      <title>Cloud Basic</title>
+      <link>https://ukantjadia.me/blog/posts/cloud-basic/</link>
+      <pubDate>Tue, 22 Mar 2022 22:36:24 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/cloud-basic/</guid>
+      <description>cloud 1. imp topics 1. Types of cloud/ Cloud deployment model + Public Cloud --&amp;gt; *[IMAGE](https://media.geeksforgeeks.org/wp-content/uploads/20211123123729/Group4-660x330.jpg) + Public cloud managed by third parties which provide cloud service over the enternet to the pubilc + public cloud is the go-to option for the small enterprise, where they are able to start there businesse without large upfront investment. + multitenacy :--&amp;gt; meant to serve multiple user not a singel user + Private Cloud --&amp;gt; *[IMAGE](https://media.</description>
+    </item>
+    
+    <item>
+      <title>Basic of OS</title>
+      <link>https://ukantjadia.me/blog/posts/basic-of-os/</link>
+      <pubDate>Mon, 21 Mar 2022 22:56:25 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/basic-of-os/</guid>
+      <description>1. Operating System[[OS]] #os 1. Paging :--&amp;gt; *[IMAGE](https://www.gatevidyalay.com/wp-content/uploads/2018/11/Translating-Logical-Address-into-Physical-Address-Diagram.png)* 1. it eleminates the need of contiguos memory allocation 2. have two main component and parts 1. component -&amp;gt; page number(p) and frame number(d) 2. parts + Logical address -&amp;gt; addres generated by the CPU {represented in bits} + Physical address -&amp;gt; physical location of a required data in a memory 2. In the process of accessing any data from memory, that will be done by accessing the memory location twice to remove this double accessing of the memory we use the TLB{Translation Lockaside Buffer}.</description>
     </item>
     
     <item>

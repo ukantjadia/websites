@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Dwmbar vs Dwmblocks - Ukant Jadia</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Dwmbar vs Dwmblocks">
+<meta itemprop="description" content="The big problem of choosing the right menu taskbar during selecting the Dynamic-Window Manager"><meta itemprop="datePublished" content="2022-05-17T22:23:44+05:30" />
+<meta itemprop="dateModified" content="2022-05-17T22:23:44+05:30" />
+<meta itemprop="wordCount" content="237">
+<meta itemprop="keywords" content="linux," /><meta property="og:title" content="Dwmbar vs Dwmblocks" />
+<meta property="og:description" content="The big problem of choosing the right menu taskbar during selecting the Dynamic-Window Manager" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ukantjadia.me/blog/posts/dwmbar-vs-dwmblocks/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-17T22:23:44+05:30" />
+<meta property="article:modified_time" content="2022-05-17T22:23:44+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dwmbar vs Dwmblocks"/>
+<meta name="twitter:description" content="The big problem of choosing the right menu taskbar during selecting the Dynamic-Window Manager"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://ukantjadia.me/blog/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://ukantjadia.me/blog/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://ukantjadia.me/blog/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ukant Jadia" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://ukantjadia.me/blog/">Ukant Jadia</a></h1>
+	<div class="site-description"><p>Read my write here!!</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/ukantjadia" title="Github"><i data-feather="github"></i></a></li><li><a href="https://twitter.com/UkantJadia" title="Twitter"><i data-feather="twitter"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/blog/posts">Home</a>
+			</li>
+			
+			<li>
+				<a href="/blog/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/blog/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/blog/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">17</span>
+							<span class="rest">May 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Dwmbar vs Dwmblocks</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="2022-05-17">2022-05-17</h1>
+<h4 id="problem-statement">problem statement</h4>
+<p>with dwmbar the cpu uses is touching its picks and that thing i don&rsquo;t like</p>
+<h3 id="solution">solution</h3>
+<p>to solve this i am trying to get the dwmblocks of Bugswriter</p>
+<h4 id="error-or-problem-faced">error or problem faced</h4>
+<ul>
+<li>
+<p>get repo</p>
+</li>
+<li>
+<p>run make and you may get this error 🔽</p>
+</li>
+<li>
+<p>Pasted image 20220518015013.png</p>
+</li>
+<li>
+<p>solving this we get this</p>
+</li>
+</ul>
+<p>use this</p>
+<p>okh now the error is fixed</p>
+<p>So first know what is error about</p>
+<p>error
+we are trying to automatically compile the dwmblocks.c file and in the code the library which is ariseing the error that is -lX11
+The path to solve this is we have to do the maual compilation of an C language file and that is very easy</p>
+<p>command for compilation is gcc dwmblocks.c -lX11 -o dwmblocks ▶ gcc as in-build compiler, dwmblocks.c file to compile, -lX11 is lib adding manually during compilation, -o to get output with, dwmblocks as name of output file</p>
+<p>edit the config file according to required blocks</p>
+<p>NOTE📌 : cp the dwmblocks file to the /usr/local/bin so it can run from any where</p>
+<p>take the dwmbloks script form lukesmith voidrice build use this</p>
+<p>add bar scripts in the /usr/local/bin this path is given in the documentation of dwmblocks</p>
+<p>now you are ready to run</p>
+<p>Command
+idconfig &ndash;&gt; configure dynamic linker run-time bindings. Used to create links and cache to the most recent shared libraries .
+gcc &lsquo;-lib-to-add&rsquo; -o &lsquo;output-file-name&rsquo;
+gcc dwmblocks.c -lX11 -o dwmblocks</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/linux">linux</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2023 |  <a href="https://github.com/ukantjadia">Ukant jadia</a> | <a href="mailto: ukantjadia0120@gmail.com">Mail</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

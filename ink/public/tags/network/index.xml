@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on Ukant Jadia</title>
+    <link>https://ukantjadia.me/blog/tags/network/</link>
+    <description>Recent content in Network on Ukant Jadia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Wed, 25 May 2022 22:33:19 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command Netstat</title>
+      <link>https://ukantjadia.me/blog/posts/command-netstat/</link>
+      <pubDate>Wed, 25 May 2022 22:33:19 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/command-netstat/</guid>
+      <description>Learn Netstat A basic Linux network command
+NETSTAT Prints the network connection and routing tables. Like an CCTV monitor for every connection come in and go out from your machine. MiniManual netstat -ant : a for all connection, n for numeric, t for all TCP connection//u for the UDP connection netstat -rnec :r for the route information, n numeric, e extend, c continous prints the result netstat -stuw : s for statistics summary,t/u for tcp/udp, w prints raw data netstat -tulpn : it shows the connectio with PID numbers lsof -i : it establish the connection </description>
+    </item>
+    
+    <item>
+      <title>Enumeration</title>
+      <link>https://ukantjadia.me/blog/posts/enumeration/</link>
+      <pubDate>Sun, 22 May 2022 22:41:47 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/enumeration/</guid>
+      <description>Enumeration Kioptrix level 1 Now as beginner we should a have vulnerable machine to test Use kioptrix level a from vulnhub. This is used for beginner to develop there skill by testing the vulnerable machine. Download it, and set up it on your virtual software. Make sure the network connection is set to NAT Open the root folder(which contain all configuration files) and open configuration file and change Bridge to NAT I Coppied select this option form pop dialogue Once the setup is done do the arp-scan -l On your system it will discover the available host in your ip CHIR Ignore the x.</description>
+    </item>
+    
+    <item>
+      <title>Learn Network Concept</title>
+      <link>https://ukantjadia.me/blog/posts/learn-network-concept/</link>
+      <pubDate>Fri, 20 May 2022 22:28:29 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/learn-network-concept/</guid>
+      <description>Networking Concept Mac address Media control access It is physical address to identify the devices it identify the NIC of each divices (NIC&amp;ndash;&amp;gt; Network identification card) ex:- ether 00:0c:49:0a:43:03 Mac work in the second and third layer of the OSI model Specially it is related to the switches TCP &amp;ndash;VS&amp;ndash; UDP TCP Transmission COntrol Protocol Connection oriented protocol used in HTTPS/SSH/TelNet/SMTP/FTP provide the more security and relailablity it form one-to-one connection and it gurantee the complete delivery of data Three way hand shake SYN -&amp;gt; SYN-ACK -&amp;gt; ACK it is slow due to three-way-handshake, it take time to complete and establis the connection Use port to establish the connection During hand-shake it acknowldge your machine to the requested server contains the 20Byte packet UDP User Datagram Protocol Connection less Protocol it provide the fast transmission Broadcast or multicast the message and the complete delivery of data is note guarnted Streamming on voice-over-io(VOIP), DHCP,DNS Used for streaming the data like procast, video contains the 8Byte packet Comman Ports and Protocol TCP PROTOCOL/SERVICE PORT&#39;S FTP 21 SSH 22 TelNet 23 SMTP 25 DNS 53 HTTP/HTTPS 80/443 POP3 110 SMB 139+445 IMAP 143 UDP PROTOCOL/SERVICE PORT&#39;S DNS 53 DHCP 67.</description>
+    </item>
+    
+  </channel>
+</rss>

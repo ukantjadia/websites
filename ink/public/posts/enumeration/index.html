@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Enumeration - Ukant Jadia</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Enumeration">
+<meta itemprop="description" content="The basic second step of Attacking"><meta itemprop="datePublished" content="2022-05-22T22:41:47+05:30" />
+<meta itemprop="dateModified" content="2022-05-22T22:41:47+05:30" />
+<meta itemprop="wordCount" content="277">
+<meta itemprop="keywords" content="Network,Cyber," /><meta property="og:title" content="Enumeration" />
+<meta property="og:description" content="The basic second step of Attacking" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ukantjadia.me/blog/posts/enumeration/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-22T22:41:47+05:30" />
+<meta property="article:modified_time" content="2022-05-22T22:41:47+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Enumeration"/>
+<meta name="twitter:description" content="The basic second step of Attacking"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://ukantjadia.me/blog/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://ukantjadia.me/blog/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://ukantjadia.me/blog/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ukant Jadia" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://ukantjadia.me/blog/">Ukant Jadia</a></h1>
+	<div class="site-description"><p>Read my write here!!</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/ukantjadia" title="Github"><i data-feather="github"></i></a></li><li><a href="https://twitter.com/UkantJadia" title="Twitter"><i data-feather="twitter"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/blog/posts">Home</a>
+			</li>
+			
+			<li>
+				<a href="/blog/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/blog/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/blog/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">22</span>
+							<span class="rest">May 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Enumeration</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="enumeration">Enumeration</h1>
+<h2 id="kioptrix-level-1">Kioptrix level 1</h2>
+<ul>
+<li>Now as beginner we should a have vulnerable machine to test</li>
+<li>Use <a href="Vhttps://www.vulnhub.com/entry/kioptrix-level-1-1,22/">kioptrix level a</a> from vulnhub.</li>
+<li>This is used for beginner to develop there skill by testing the vulnerable machine.</li>
+<li>Download it, and set up it on your virtual software.</li>
+<li>Make sure the network connection is set to <code>NAT</code></li>
+<li>Open the root folder(which contain all configuration files) and open configuration file and change <code>Bridge</code> to <code>NAT</code></li>
+<li><code>I Coppied</code> select this option form pop dialogue</li>
+<li>Once the setup is done do the <code>arp-scan -l</code></li>
+<li>On your system it will discover the available host in your ip CHIR</li>
+<li>Ignore the x.x.x.1 and x.x.x.254 because this are your network identity and broadcast ip, Rest all machine are lying in your ip range.</li>
+</ul>
+<h2 id="nmap-stealthy-scan">Nmap stealthy scan</h2>
+<ul>
+<li>What normal two way connection looks like</li>
+</ul>
+<blockquote>
+<p>SYN &lt;-&gt; SYNACK &lt;-&gt; ACK</p>
+</blockquote>
+<ul>
+<li>Stealthy scan doesn&rsquo;t establish the connection it ask for the open port on the serve as server reply the status it will take the step back without establishing the connection.</li>
+</ul>
+<blockquote>
+<p>SYN &lt;-&gt; SYNACK &lt;-&gt; RST</p>
+</blockquote>
+<ul>
+<li>Use this Namp flags for better enumeration
+<code>nmap -T4 -p- -A &lt;ip_address&gt;</code></li>
+<li>Go through the scan properly</li>
+<li>Visit ip/webpage, check weather there you can do anything like directory busting.</li>
+<li>Get all services running, also check the header and behaviour.</li>
+<li>Do whatever you can do.</li>
+<li>Then use nikto web vulnerability tool.</li>
+</ul>
+<blockquote>
+<p><code>nikto -host &lt;url&gt;</code></p>
+</blockquote>
+<h2 id="directory-busting">Directory busting</h2>
+<ul>
+<li>dirbuster / birb / gobuster</li>
+</ul>
+<h2 id="dirbuster">dirbuster</h2>
+<ul>
+<li>start dirbuster from terminal</li>
+<li>fill the slot with information of your target</li>
+<li>for word file use <code>/usr/share/wordlist/dirbuster</code></li>
+<li>File extension depends on you or the time you have.</li>
+<li>Received/common url can be a information disclosure of anything like stats, user-data, server header, response.</li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/network">Network</a></li>
+							
+							<li><a href="/tags/cyber">Cyber</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2023 |  <a href="https://github.com/ukantjadia">Ukant jadia</a> | <a href="mailto: ukantjadia0120@gmail.com">Mail</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

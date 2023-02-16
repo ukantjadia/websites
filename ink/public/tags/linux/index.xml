@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Ukant Jadia</title>
+    <link>https://ukantjadia.me/blog/tags/linux/</link>
+    <description>Recent content in Linux on Ukant Jadia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sun, 26 Jun 2022 22:47:32 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Md to Html</title>
+      <link>https://ukantjadia.me/blog/posts/md-to-html/</link>
+      <pubDate>Sun, 26 Jun 2022 22:47:32 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/md-to-html/</guid>
+      <description>Conversion of Markdown(.md) to html markup language get the pandoc Use the following command pandoc smaple_readme.md -t html -o sample_readme.html In shell it would be written like cat=$(pandoc $1.md -t html -o $1.html ) It will be run the loop with wildcard like for i in ~/locat/.md/file/* ; do $(var) ; done Modification check extension of each file with if condition and print the non md file like if [ $1 -ne *.</description>
+    </item>
+    
+    <item>
+      <title>Git Command</title>
+      <link>https://ukantjadia.me/blog/posts/git-command/</link>
+      <pubDate>Thu, 16 Jun 2022 22:44:17 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/git-command/</guid>
+      <description>what you should do in git git init -b main git remote add origin &amp;lt;repo_link&amp;gt; git remote -v cd to the root file of the project echo &amp;ldquo;+ Project &amp;quot; &amp;raquo; README.md git init git add . git commit -m &amp;ldquo;README&amp;rdquo; git branch -M Main git remote add origin &amp;lt;repo_link&amp;gt; git push -u origin Main
+pushing an existing repo from cli git remote add origin https://github.com/UserCtf777/Inkdrop.git git branch -M Main git push -u origin Main after clonning any repo it have the address of origin, simply you cannot add your repo url for backup/project/ICR for that you have to change the origin url follow the following command</description>
+    </item>
+    
+    <item>
+      <title>Information Gathering</title>
+      <link>https://ukantjadia.me/blog/posts/information-gathering/</link>
+      <pubDate>Tue, 14 Jun 2022 22:49:51 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/information-gathering/</guid>
+      <description>Recon There are two type of Reconnaissance
+Passive Reconnaissance :&amp;ndash; Doing the recon without coming in direct contact of the target. \
+Active Reconnaissance :&amp;ndash; Doing the active notecible action on the target site.
+Passive Reconnaissance includes local/Geo Information Satellite Images Building layout Cabin location, fence, count of head in building, ways to exit, break areas, security fencing. Job information Senior manager name, meeting routine, job title. Image from social sites like badge photo, cubical, desktop.</description>
+    </item>
+    
+    <item>
+      <title>Learn Tmux</title>
+      <link>https://ukantjadia.me/blog/posts/learn-tmux/</link>
+      <pubDate>Mon, 23 May 2022 22:53:27 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/learn-tmux/</guid>
+      <description>#tmux #linux
+#tool bullet point install what it is what it can do tmux key binding tmux conf extra features patching for history backups Linux : sudo apt-get install tmux Fedora : sudo dnf -y install tmux Cent-OS : sudo yum -y install tmux Arch Linux : sudo pacman -S tmux to start : tmux NOTE: Prefix key : Ctrl+b github What is tmux ?? It is terminal multiplexer. It acts as a window manager in your terminal.</description>
+    </item>
+    
+    <item>
+      <title>Dwmbar vs Dwmblocks</title>
+      <link>https://ukantjadia.me/blog/posts/dwmbar-vs-dwmblocks/</link>
+      <pubDate>Tue, 17 May 2022 22:23:44 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/dwmbar-vs-dwmblocks/</guid>
+      <description>2022-05-17 problem statement with dwmbar the cpu uses is touching its picks and that thing i don&amp;rsquo;t like
+solution to solve this i am trying to get the dwmblocks of Bugswriter
+error or problem faced get repo
+run make and you may get this error 🔽
+Pasted image 20220518015013.png
+solving this we get this
+use this
+okh now the error is fixed
+So first know what is error about
+error we are trying to automatically compile the dwmblocks.</description>
+    </item>
+    
+    <item>
+      <title>Display Error</title>
+      <link>https://ukantjadia.me/blog/posts/display-error/</link>
+      <pubDate>Wed, 23 Mar 2022 22:39:08 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/display-error/</guid>
+      <description>Display-problem solve_the_display xserver_error GTK gdm3 tty cd etc/apt/source deb http:/http.kali.org
+cd etc/environment cat /etc/os-release cat /etc/apt/source.list #edit_source manually update the some packages sudo vim /var/lib/dpkg/status 1 . find the required package 2. delet all pacakge data ( do not delete the argument of some commands ) 3. save that file and again update the system
+$` sudo apt update` Now i install the gdm3 because there is enviroment variable( $DISPLAY) was broken during pulling big git repository </description>
+    </item>
+    
+  </channel>
+</rss>

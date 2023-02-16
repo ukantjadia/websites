@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regular on Ukant Jadia</title>
+    <link>https://ukantjadia.me/blog/tags/regular/</link>
+    <description>Recent content in regular on Ukant Jadia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sun, 14 Aug 2022 15:53:11 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/tags/regular/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 15 Aug</title>
+      <link>https://ukantjadia.me/blog/diary/2022-08-15/</link>
+      <pubDate>Sun, 14 Aug 2022 15:53:11 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/diary/2022-08-15/</guid>
+      <description>TODO do the ML complete with lab records, notes
+do the DBMS with table erd , notes
+do the python log lib</description>
+    </item>
+    
+  </channel>
+</rss>

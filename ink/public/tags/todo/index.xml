@@ -6,17 +6,24 @@
     <description>Recent content in todo on Ukant Jadia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 18 Mar 2018 02:01:58 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/tags/todo/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright notice</copyright><atom:link href="https://ukantjadia.me/blog/tags/todo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Primer: When You Have Too Much to Do</title>
-      <link>https://ukantjadia.me/blog/posts/post-1/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <title>2022 20 Aug</title>
+      <link>https://ukantjadia.me/blog/diary/2022-08-21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ukantjadia.me/blog/posts/post-1/</guid>
-      <description>You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.
-It all keeps piling up, and it can feel overwhelming.
-How do you keep up with it all? How do you find focus and peace and get stuff accomplished when you have too much on your plate?</description>
+      <guid>https://ukantjadia.me/blog/diary/2022-08-21/</guid>
+      <description>to do make ready the timeline theme for the daily post
+write readme for stoserver and upload.sh script
+create banner aavsyktaa hi avishkaar ki jannani h need(solution) = invention(X) Realy to do Write ML source code lab records
+write DBMS records
+write computer network assignment
+Python | logs
+python | CS50
+python | api application
+shell readme files
+script for the regular update on the website
+save the diary file localy and then trasnfer it to the server using rsync(zip) write a script in server which execute daily and function is check for the if dir there is any notes to add or not if yes then do it (execute another fun or script ) else exit</description>
     </item>
     
   </channel>

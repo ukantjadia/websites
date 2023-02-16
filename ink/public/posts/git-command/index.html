@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Git Command - Ukant Jadia</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Git Command">
+<meta itemprop="description" content="This document include the all basic command for handling a repo."><meta itemprop="datePublished" content="2022-06-16T22:44:17+05:30" />
+<meta itemprop="dateModified" content="2022-06-16T22:44:17+05:30" />
+<meta itemprop="wordCount" content="632">
+<meta itemprop="keywords" content="Linux," /><meta property="og:title" content="Git Command" />
+<meta property="og:description" content="This document include the all basic command for handling a repo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ukantjadia.me/blog/posts/git-command/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-16T22:44:17+05:30" />
+<meta property="article:modified_time" content="2022-06-16T22:44:17+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git Command"/>
+<meta name="twitter:description" content="This document include the all basic command for handling a repo."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://ukantjadia.me/blog/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://ukantjadia.me/blog/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://ukantjadia.me/blog/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ukant Jadia" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://ukantjadia.me/blog/">Ukant Jadia</a></h1>
+	<div class="site-description"><p>Read my write here!!</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/ukantjadia" title="Github"><i data-feather="github"></i></a></li><li><a href="https://twitter.com/UkantJadia" title="Twitter"><i data-feather="twitter"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/blog/posts">Home</a>
+			</li>
+			
+			<li>
+				<a href="/blog/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/blog/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/blog/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">16</span>
+							<span class="rest">Jun 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Git Command</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="what-you-should-do-in-git">what you should do in git</h1>
+<ol>
+<li>git init -b main</li>
+<li>git remote add origin &lt;repo_link&gt;</li>
+<li>git remote -v</li>
+</ol>
+<hr>
+<p>cd to the root file of the project
+echo &ldquo;+ Project &quot; &raquo; README.md
+git init
+git add .
+git commit -m &ldquo;README&rdquo;
+git branch -M Main
+git remote add origin &lt;repo_link&gt;
+git push -u origin Main</p>
+<hr>
+<ul>
+<li>pushing an existing repo from cli
+git remote add origin <a href="https://github.com/UserCtf777/Inkdrop.git">https://github.com/UserCtf777/Inkdrop.git</a>
+git branch -M Main
+git push -u origin Main</li>
+</ul>
+<hr>
+<p>after clonning any repo it have the address of origin, simply you cannot add your repo url for backup/project/ICR
+for that you have to change the origin url follow the following command</p>
+<ul>
+<li>
+<p>to check the origin url try the remote verbose
+git remote -v</p>
+</li>
+<li>
+<p>to change the remote origin try
+git remote set-url origin &lt;repo_url&gt;</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>new error found</p>
+</li>
+<li>
+<p>sometimes when we clone the repo we use depth=1 to remove it&rsquo;s history</p>
+</li>
+<li>
+<p>this give the error during pushing it to other origin</p>
+</li>
+<li>
+<p>error looks like</p>
+</li>
+<li>
+<pre><code>     ![remote rejected] Main -&gt; Main (shallow update not allowed)
+</code></pre>
+</li>
+<li>
+<pre><code>  error: failed to push some refs to
+</code></pre>
+</li>
+<li>
+<p>to solve this try
+git remote set-url &lt;old_url&gt;
+git fetch &ndash;unshallow old</p>
+</li>
+</ul>
+<ol>
+<li>git init -b main</li>
+<li>git remote add origin &lt;repo_link&gt;</li>
+<li>git remote -v</li>
+</ol>
+<hr>
+<p>cd to the root file of the project
+echo &ldquo;+ Project &quot; &raquo; README.md
+git init
+git add .
+git commit -m &ldquo;README&rdquo;
+git branch -M Main
+git remote add origin &lt;repo_link&gt;
+git push -u origin Main</p>
+<hr>
+<ul>
+<li>pushing an existing repo from cli
+git remote add origin <a href="https://github.com/UserCtf777/Inkdrop.git">https://github.com/UserCtf777/Inkdrop.git</a>
+git branch -M Main
+git push -u origin Main</li>
+</ul>
+<hr>
+<p>after clonning any repo it have the address of origin, simply you cannot add your repo url for backup/project/ICR
+for that you have to change the origin url follow the following command</p>
+<ul>
+<li>
+<p>to check the origin url try the remote verbose
+git remote -v</p>
+</li>
+<li>
+<p>to change the remote origin try
+git remote set-url origin &lt;repo_url&gt;</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>new error found</p>
+</li>
+<li>
+<p>sometimes when we clone the repo we use depth=1 to remove it&rsquo;s history</p>
+</li>
+<li>
+<p>this give the error during pushing it to other origin</p>
+</li>
+<li>
+<p>error looks like</p>
+</li>
+<li>
+<pre><code>     ![remote rejected] Main -&gt; Main (shallow update not allowed)
+</code></pre>
+</li>
+<li>
+<pre><code>  error: failed to push some refs to
+</code></pre>
+</li>
+<li>
+<p>to solve this try
+git remote set-url &lt;old_url&gt;
+git fetch &ndash;unshallow old
++!/bin/bash</p>
+</li>
+</ul>
+<p>cd ~/work/obs/Obsidian</p>
+<p>git add .
+git commit -m &lsquo;daily update&rsquo;
+git push</p>
+<p>+!/bin/bash</p>
+<ul>
+<li>
+<p>to make dir work as git repo
+git init</p>
+</li>
+<li>
+<p>to check the changes
+git status</p>
+</li>
+<li>
+<p>to sort/simplify the changes
+git add .</p>
+</li>
+<li>
+<p>git log shows the log of all commit done
+git log</p>
+</li>
+<li>
+<p>restore to discard the changes
+git restore .</p>
+</li>
+<li>
+<p>to commit the changes [with &lsquo;-m&rsquo; for successful commit/{-m =&gt; metadata of changes}]
+git commit -m &ldquo;daily update&rdquo;</p>
+</li>
+<li>
+<p>git push to add new file to the repo
+git push</p>
+</li>
+<li>
+<p>command to add remote repo / it skip the authentication part during git push
+git remote add origin <a href="mailto:git@github.com">git@github.com</a>:UserCtf777/Obsidian.git
+git branch -M master
+git push -m origin master</p>
+</li>
+<li>
+<p>To solve the conflicts during rebasing
+git rebase &ndash;continue + fix conflicts and run this
+git rebase &ndash;skip + to skip this patch/changes
+git rebase &ndash;abort + to checkout the original branch</p>
+</li>
+<li>
+<p>When we have unresolved conflicts before merging or having error related to add
+git fetch + to gain the latest changes from server
+git merge origin master + to give a try to automatice merging</p>
+</li>
+<li>
+<p>it will only work if branch has to merge something&ndash; it can be checked with git status
+git merge &ndash;abort  + the unresolved conflicts will be cleared off</p>
+</li>
+<li>
+<p>to edit the conflicts
+git rebase &ndash;edit-todo
+git rebase &ndash;continue</p>
+</li>
+<li>
+<p>if conflicts dosen&rsquo;t resolve then
+git rebase &ndash;abort</p>
+</li>
+<li>
+<p>it will give the path of unresolved files</p>
+</li>
+<li>
+<p>if you know how to edit then resolve them</p>
+</li>
+<li>
+<p>OR you can remove that confict by
+git rm <!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>if nothing is ahppening you can skip the commit wiht
+git rebase &ndash;skip</p>
+</li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/linux">Linux</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2023 |  <a href="https://github.com/ukantjadia">Ukant jadia</a> | <a href="mailto: ukantjadia0120@gmail.com">Mail</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

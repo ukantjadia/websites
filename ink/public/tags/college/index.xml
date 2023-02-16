@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>college on Ukant Jadia</title>
+    <link>https://ukantjadia.me/blog/tags/college/</link>
+    <description>Recent content in college on Ukant Jadia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright><atom:link href="https://ukantjadia.me/blog/tags/college/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 14 Aug</title>
+      <link>https://ukantjadia.me/blog/diary/2022-08-14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/diary/2022-08-14/</guid>
+      <description>TODO Do website
+work with lugo
+download nginx to admin
+check google CLI interface/ check the free usage
+estabish connection with ssh
+DO dbms on server edr</description>
+    </item>
+    
+    <item>
+      <title>2022 16 Aug</title>
+      <link>https://ukantjadia.me/blog/diary/2022-08-16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/diary/2022-08-16/</guid>
+      <description>lab manual Installation Project, create database ER </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,7 +2,7 @@ baseURL = "https://ukantjadia.me/blog/"
 languageCode = "en-us"
 title = "Ukant Jadia"
 theme = "ink"
-paginate = 5
+paginate = 10
 
 copyright = "© Copyright notice"
 
@@ -32,13 +32,15 @@ disqusShortname = "Comment"
 # Nav.
 [[menu.main]]
 name = "Home"
-url = "/"
+url = "/posts"
 weight = 1
 
 [[menu.main]]
 name = "All posts"
 url = "/posts"
 weight = 2
+
+
 
 [[menu.main]]
 name = "About"

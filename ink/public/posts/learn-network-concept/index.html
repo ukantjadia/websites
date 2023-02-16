@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Learn Network Concept - Ukant Jadia</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Learn Network Concept">
+<meta itemprop="description" content="Learn some basic concept here, added some good links too!!"><meta itemprop="datePublished" content="2022-05-20T22:28:29+05:30" />
+<meta itemprop="dateModified" content="2022-05-20T22:28:29+05:30" />
+<meta itemprop="wordCount" content="636">
+<meta itemprop="keywords" content="Network," /><meta property="og:title" content="Learn Network Concept" />
+<meta property="og:description" content="Learn some basic concept here, added some good links too!!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ukantjadia.me/blog/posts/learn-network-concept/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-20T22:28:29+05:30" />
+<meta property="article:modified_time" content="2022-05-20T22:28:29+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Learn Network Concept"/>
+<meta name="twitter:description" content="Learn some basic concept here, added some good links too!!"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://ukantjadia.me/blog/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://ukantjadia.me/blog/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://ukantjadia.me/blog/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ukant Jadia" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://ukantjadia.me/blog/">Ukant Jadia</a></h1>
+	<div class="site-description"><p>Read my write here!!</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/ukantjadia" title="Github"><i data-feather="github"></i></a></li><li><a href="https://twitter.com/UkantJadia" title="Twitter"><i data-feather="twitter"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/blog/posts">Home</a>
+			</li>
+			
+			<li>
+				<a href="/blog/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/blog/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/blog/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">20</span>
+							<span class="rest">May 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Learn Network Concept</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="networking-concept">Networking Concept</h1>
+<h3 id="mac-address">Mac address</h3>
+<ul>
+<li>Media control access</li>
+<li>It is physical address to identify the devices</li>
+<li>it identify the NIC of each divices (NIC&ndash;&gt; Network identification card)</li>
+<li>ex:- ether 00:0c:49:0a:43:03</li>
+<li>Mac work in the second and third layer of the OSI model</li>
+<li>Specially it is related to the switches</li>
+</ul>
+<hr>
+<h3 id="tcp---vs---udp">TCP &ndash;VS&ndash; UDP</h3>
+<h4 id="tcp">TCP</h4>
+<ul>
+<li>Transmission COntrol Protocol</li>
+<li>Connection oriented protocol</li>
+<li>used in HTTPS/SSH/TelNet/SMTP/FTP</li>
+<li>provide the more security and relailablity</li>
+<li>it form one-to-one connection and it gurantee the complete delivery of data</li>
+<li>Three way hand shake</li>
+<li>SYN -&gt; SYN-ACK -&gt; ACK</li>
+<li>it is slow due to three-way-handshake, it take time to complete and establis the connection</li>
+<li>Use port to establish the connection</li>
+<li>During hand-shake it acknowldge your machine to the requested server</li>
+<li>contains the 20Byte packet</li>
+</ul>
+<h4 id="udp">UDP</h4>
+<ul>
+<li>User Datagram Protocol</li>
+<li>Connection less Protocol</li>
+<li>it provide the fast transmission</li>
+<li>Broadcast or multicast the message and the complete delivery of data is note guarnted</li>
+<li>Streamming on voice-over-io(VOIP), DHCP,DNS</li>
+<li>Used for streaming the data like procast, video</li>
+<li>contains the 8Byte packet</li>
+</ul>
+<hr>
+<h3 id="comman-ports-and-protocol">Comman Ports and Protocol</h3>
+<h4 id="tcp-1">TCP</h4>
+<pre><code>  PROTOCOL/SERVICE                            PORT'S
+    FTP                                        21
+    SSH                                        22                                     
+    TelNet                                     23
+    SMTP                                       25
+    DNS                                        53
+    HTTP/HTTPS                                 80/443   
+    POP3                                       110
+    SMB                                        139+445
+    IMAP                                       143
+</code></pre>
+<h4 id="udp-1">UDP</h4>
+<pre><code>  PROTOCOL/SERVICE                            PORT'S
+    DNS                                        53  
+    DHCP                                       67.68
+    TFTP                                       69
+    SNMP                                       161
+</code></pre>
+<hr>
+<h3 id="the-osi-model">The OSI Model</h3>
+<ul>
+<li>
+<p>Open Systems Interconnection(OSI)</p>
+</li>
+<li>
+<p>Learn this mnemonic to to know the seven layer sequence</p>
+</li>
+<li>
+<p><strong>Please Do Not Throw Sausage Pizza Away</strong></p>
+</li>
+<li>
+<p>OSI seven layers are</p>
+<pre><code>  1. Physical                               (P)Please
+  2. Data link                              (D)Do
+  3. Network                                (N)Not
+  4. Transport                              (T)Throw
+  5. Session                                (S)Sausage
+  6. Presentation                           (P)Pizza
+  7. Application                            (A)Away
+</code></pre>
+</li>
+<li>
+<p>OSI Model Explain <a href="https://www.imperva.com/learn/application-security/osi-model/">REF</a> <a href="https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/02/OSI-vs.-TCPIP-models.jpg.webp">IMG</a></p>
+<pre><code>Layers                                        For
+1. Physical --                               Provide the connection between computer and network, it includes physical datacable,server
+2. Data Link --                              Make sure the data-transfer is error-free between different node, when data packet arrive at network layer then data link layer(DLL) deliver that packet to the requested host using MAC address.
+3. Network --                                Transmitt the data from one host to other, in different netwroks.It also place the reciver/sender ip address in header of packet.
+4. Transport --                              Data packet referred as Segment, it is responsible for the end-to-end delivery of complete message without any error/packet loss.
+5. Session --                                Responsible for the establishing the session,maintaining and also ensure the security
+6. Presentation ---                          Data from application layer(layer 7) is extracted here and manipulate as per the required to transmit over network.
+7. Application ---                           Used by the end user software such as web browser and email clients.
+</code></pre>
+</li>
+</ul>
+<h5 id="while-receiving-the-data-from-network-model-work-from-layer-1----layer-7">While Receiving the data from network model work from layer 1 &ndash;&gt; layer 7</h5>
+<h5 id="while-sending-the-data-from-machine-model-work-from-layer-7----layer-1">While sending the data from machine model work from layer 7 &ndash;&gt; layer 1</h5>
+<hr>
+<h3 id="networks">Networks</h3>
+<ul>
+<li>
+<p>IP address are work with the third layer of the OSI Model</p>
+</li>
+<li>
+<p>There are two types of ip address</p>
+<ul>
+<li>IPv4 : 192.168.34.123</li>
+<li>IPv6 : 23:s3:3w:34:dw:23:2d</li>
+</ul>
+</li>
+<li>
+<p>In IPv4 each section after delimeter(.) is contain the 8 bits each (0 &amp; 1)</p>
+</li>
+<li>
+<p>The total of complete ip address is 32 byte.</p>
+</li>
+<li>
+<p>the total in terms of the bits is 256 that is from 0 to 255.</p>
+</li>
+<li>
+<p>There are many network around you and your system and all are having the very specific identity number that is known as IP address.</p>
+</li>
+<li>
+<p>Types of ip address in a network</p>
+</li>
+<li>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Start ip</th>
+<th>End ip</th>
+<th>Subnet Mask</th>
+<th>Netwroks(max)</th>
+<th>Hosts(max)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>0</td>
+<td>127</td>
+<td>255.0.0.0</td>
+<td>126</td>
+<td>16,646,144</td>
+</tr>
+<tr>
+<td>B</td>
+<td>127</td>
+<td>191</td>
+<td>255.255.0.0</td>
+<td>16,383</td>
+<td>15,024</td>
+</tr>
+<tr>
+<td>C</td>
+<td>192</td>
+<td>223</td>
+<td>255.225.255.0</td>
+<td>2097,151</td>
+<td>254</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>IP address in the binary format</p>
+<ul>
+<li>
+<pre><code> 11111111.11111111.11111111.0 == 255.255.255.0 
+</code></pre>
+</li>
+<li>
+<pre><code>  	== 192.168.15.
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Some Standard Slash Network</p>
+<ul>
+<li>/24 Network</li>
+<li>
+<table>
+<thead>
+<tr>
+<th>128</th>
+<th>64</th>
+<th>32</th>
+<th>16</th>
+<th>8</th>
+<th>4</th>
+<th>2</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>/25 Network</li>
+<li>
+<table>
+<thead>
+<tr>
+<th>128</th>
+<th>64</th>
+<th>32</th>
+<th>16</th>
+<th>8</th>
+<th>4</th>
+<th>2</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="it-is-getting-hard-for-me-to-write-and-draw-the-ahed-so-i-am-adding-some-link-of-my-document-go-through-them-some-link-to-internet-resources">It is getting hard for me to write and draw the ahed so i am adding some link of my document go through them, Some link to internet resources</h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=ZxAwQB8TZsM">7_second_subnating</a></li>
+<li><a href="https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view">subnet_execl_sheet</a></li>
+<li><a href="https://drive.google.com/file/d/1tl052Kxro6GOT15H0YfHaA9-fhV8xZRa/view?usp=drivesdk">my_hand_written_notes</a></li>
+</ol>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/network">Network</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2023 |  <a href="https://github.com/ukantjadia">Ukant jadia</a> | <a href="mailto: ukantjadia0120@gmail.com">Mail</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

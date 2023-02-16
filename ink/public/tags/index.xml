@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 21 Jan 2023 17:43:42 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>test</title>
-      <link>https://ukantjadia.me/blog/tags/test/</link>
-      <pubDate>Sat, 21 Jan 2023 17:43:42 +0530</pubDate>
-      
-      <guid>https://ukantjadia.me/blog/tags/test/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 17 Jan 2023 23:08:58 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DataScience</title>
       <link>https://ukantjadia.me/blog/tags/datascience/</link>
@@ -32,6 +23,33 @@
       <pubDate>Tue, 17 Jan 2023 23:08:58 +0530</pubDate>
       
       <guid>https://ukantjadia.me/blog/tags/visualize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://ukantjadia.me/blog/tags/linux/</link>
+      <pubDate>Sun, 26 Jun 2022 22:47:32 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cyber</title>
+      <link>https://ukantjadia.me/blog/tags/cyber/</link>
+      <pubDate>Tue, 14 Jun 2022 22:49:51 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/tags/cyber/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://ukantjadia.me/blog/tags/network/</link>
+      <pubDate>Wed, 25 May 2022 22:33:19 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/tags/network/</guid>
       <description></description>
     </item>
     

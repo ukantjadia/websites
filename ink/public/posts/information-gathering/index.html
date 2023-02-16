@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Information Gathering - Ukant Jadia</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Information Gathering">
+<meta itemprop="description" content="The first step of attacking ! know your target"><meta itemprop="datePublished" content="2022-06-14T22:49:51+05:30" />
+<meta itemprop="dateModified" content="2022-06-14T22:49:51+05:30" />
+<meta itemprop="wordCount" content="465">
+<meta itemprop="keywords" content="Linux,Cyber," /><meta property="og:title" content="Information Gathering" />
+<meta property="og:description" content="The first step of attacking ! know your target" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ukantjadia.me/blog/posts/information-gathering/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-14T22:49:51+05:30" />
+<meta property="article:modified_time" content="2022-06-14T22:49:51+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Information Gathering"/>
+<meta name="twitter:description" content="The first step of attacking ! know your target"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ukantjadia.me/blog/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://ukantjadia.me/blog/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://ukantjadia.me/blog/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://ukantjadia.me/blog/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Ukant Jadia" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://ukantjadia.me/blog/">Ukant Jadia</a></h1>
+	<div class="site-description"><p>Read my write here!!</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/ukantjadia" title="Github"><i data-feather="github"></i></a></li><li><a href="https://twitter.com/UkantJadia" title="Twitter"><i data-feather="twitter"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/blog/posts">Home</a>
+			</li>
+			
+			<li>
+				<a href="/blog/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/blog/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/blog/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">14</span>
+							<span class="rest">Jun 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Information Gathering</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="recon">Recon</h1>
+<p>There are two type of Reconnaissance</p>
+<ol>
+<li>
+<p>Passive Reconnaissance :&ndash; Doing the recon without coming in direct contact of the target.  \</p>
+</li>
+<li>
+<p>Active Reconnaissance :&ndash; Doing the active notecible action on the target site.</p>
+</li>
+</ol>
+<h2 id="passive-reconnaissance-includes">Passive Reconnaissance includes</h2>
+<ul>
+<li>local/Geo Information
+<ul>
+<li>Satellite Images</li>
+<li>Building layout</li>
+</ul>
+<ul>
+<li>Cabin location, fence, count of head in building, ways to exit, break areas, security fencing.</li>
+</ul>
+</li>
+<li>Job information</li>
+<li>Senior manager name, meeting routine, job title.</li>
+<li>Image from social sites like badge photo, cubical, desktop.</li>
+</ul>
+<h2 id="web-and-network-information">Web and Network Information</h2>
+<h3 id="targe-validation">Targe Validation</h3>
+<p>First thing you have to do is, validate your target.</p>
+<p>Weather the description of given target is having the relating with the given ip</p>
+<h3 id="finding-subdomain">Finding Subdomain</h3>
+<p>Testing only one domain or some domain is decrease the chances of finding the flaw.</p>
+<p>Testing the all in-scope sub-domain is a good practice.</p>
+<p>Tool can be use for finding the subdomain are</p>
+<p>Google fu, dig, Nmap, sublist3r, bluto, crt.sh etc.</p>
+<h3 id="fingerprinting">Fingerprinting</h3>
+<p>We need to know which website running what on front or back.</p>
+<p>What&rsquo;s running on the host.</p>
+<p>What&rsquo;s web server, ssh, ftp, services.</p>
+<h3 id="data-breaches">Data Breaches</h3>
+<p>Just check if the credentials or account is pawned or not</p>
+<p>Use this to check</p>
+<p>havebeenpawned, Breach-prose, weleakinfo.</p>
+<p><strong>NOTE:</strong> Better Recon, enumeration makes you better pentester.</p>
+<h1 id="email-address-gathering-with-hunterio">Email Address gathering with Hunter.io</h1>
+<ul>
+<li>You can use Hunter.io to find the people email address working or related to the domain you enter.</li>
+</ul>
+<ul>
+<li>In free plan it only provide the 20 searches as free, so do not abuse the searches.</li>
+<li>It also tell the where it get all emails written in source.</li>
+<li>You have to login with valid email id to have account.</li>
+<li>It also provide the category of email address, the department of the email owner.</li>
+</ul>
+<h1 id="breach-phrase-from-github">Breach-Phrase from github</h1>
+<ul>
+<li>It is tool on the GitHub, it checks for the leaked credentials in its own in-build data of credentials</li>
+<li>This in build data is gather from the dark web store.</li>
+</ul>
+<p><strong>NOTE:</strong> the gather email address are plays important role in further recon and enumeration.</p>
+<h1 id="utilizing-the-harvester">Utilizing the Harvester</h1>
+<ul>
+<li>It searches with the domain.</li>
+<li>It can gather the subdomain name, e-mail addresses, virtual hosts, open ports/banner, and employee name from different public sources like search engine, social site</li>
+</ul>
+<h1 id="hunting-subdomain">Hunting Subdomain</h1>
+<p>We need see/identify what are the available or working subdomain out there.
+use this</p>
+<ul>
+<li>Sublist3r
+<ul>
+<li>Sometimes it only give the 3 level subdomain</li>
+</ul>
+</li>
+<li>crt.sh
+<ul>
+<li>It give the all registered subdomain that can be 3 level or 4 level</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>OWASP Amass is more efficient tool than above mentioned</li>
+<li>Sublist3r is slow during to fast up increase the threads
+<strong>NOTE:</strong> Found subdomain may or may not alive.</li>
+</ul>
+<h1 id="identifying-the-web-technologies">Identifying the Web Technologies</h1>
+<ul>
+<li>To Fingerprinting the web page or to get the services running in the background</li>
+<li>wappalyzer is browser extension which show the frontend and backend services.</li>
+<li>Terminal tool is whatweb
+<ul>
+<li>use <code>whatweb -h</code> for more details of tool</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/linux">Linux</a></li>
+							
+							<li><a href="/tags/cyber">Cyber</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2023 |  <a href="https://github.com/ukantjadia">Ukant jadia</a> | <a href="mailto: ukantjadia0120@gmail.com">Mail</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

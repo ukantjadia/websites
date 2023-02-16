@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cyber on Ukant Jadia</title>
+    <link>https://ukantjadia.me/blog/tags/cyber/</link>
+    <description>Recent content in Cyber on Ukant Jadia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Tue, 14 Jun 2022 22:49:51 +0530</lastBuildDate><atom:link href="https://ukantjadia.me/blog/tags/cyber/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Information Gathering</title>
+      <link>https://ukantjadia.me/blog/posts/information-gathering/</link>
+      <pubDate>Tue, 14 Jun 2022 22:49:51 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/information-gathering/</guid>
+      <description>Recon There are two type of Reconnaissance
+Passive Reconnaissance :&amp;ndash; Doing the recon without coming in direct contact of the target. \
+Active Reconnaissance :&amp;ndash; Doing the active notecible action on the target site.
+Passive Reconnaissance includes local/Geo Information Satellite Images Building layout Cabin location, fence, count of head in building, ways to exit, break areas, security fencing. Job information Senior manager name, meeting routine, job title. Image from social sites like badge photo, cubical, desktop.</description>
+    </item>
+    
+    <item>
+      <title>Enumeration</title>
+      <link>https://ukantjadia.me/blog/posts/enumeration/</link>
+      <pubDate>Sun, 22 May 2022 22:41:47 +0530</pubDate>
+      
+      <guid>https://ukantjadia.me/blog/posts/enumeration/</guid>
+      <description>Enumeration Kioptrix level 1 Now as beginner we should a have vulnerable machine to test Use kioptrix level a from vulnhub. This is used for beginner to develop there skill by testing the vulnerable machine. Download it, and set up it on your virtual software. Make sure the network connection is set to NAT Open the root folder(which contain all configuration files) and open configuration file and change Bridge to NAT I Coppied select this option form pop dialogue Once the setup is done do the arp-scan -l On your system it will discover the available host in your ip CHIR Ignore the x.</description>
+    </item>
+    
+  </channel>
+</rss>
